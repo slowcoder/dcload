@@ -1,0 +1,16 @@
+CFLAGS += -DSTM32F103xG
+CFLAGS += -DUSE_STDPERIPH_DRIVER
+
+CFLAGS += \
+	-Ilibs/STM32F10x_StdPeriph_Driver/inc
+
+OBJS += \
+    libs/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o \
+    libs/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.o \
+    libs/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o \
+    libs/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o \
+    libs/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o \
+    libs/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o \
+    libs/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o \
+	libs/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o \
+	libs/STM32F10x_StdPeriph_Driver/src/misc.o
